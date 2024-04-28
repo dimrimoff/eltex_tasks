@@ -3,13 +3,12 @@
 #include <stdio.h>
 #define N 5
 
-int array[N][N] = {0};
-int row_start = 0, row_end = N - 1;
-int col_start = 0, col_end = N - 1;
-int count = 1;
-  
 int main() {
-  
+  int array[N][N] = {0};
+  int row_start = 0, row_end = N - 1;
+  int col_start = 0, col_end = N - 1;
+  int count = 1;
+    
   while (row_start <= row_end && col_start <= col_end) {
 
     for (int i = col_start; i <= col_end; ++i) {
