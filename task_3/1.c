@@ -11,7 +11,7 @@ int main() {
   printf("Binary representation of %d: \n", input_positive);
   PrintBinary(input_positive);
 
-  ptr = &input_positive;
+  ptr = (char *)&input_positive;
   
   do {
     printf("Enter a new value for the third byte (integer in 0...255): ");
